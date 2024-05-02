@@ -50,6 +50,10 @@ const Navbar = () => {
       <div className={styles.links}>
         <DarkModeToggle />
         {links.map((link) => (
+          // <a href={'http://localhost:3000/'+link.url} className={styles.link}>
+          //   {link.title}
+          // </a>
+          // <Link> has cache properties. It caches the loaded windows so user can quicky navigate using browser forward/backward 
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
